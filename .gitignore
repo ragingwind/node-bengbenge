@@ -1,5 +1,3 @@
-### /Users/ragingwind/.gitignore-boilerplates/Node.gitignore
-
 lib-cov
 *.seed
 *.log

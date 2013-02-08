@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         eqnull: true,
         node: true,
         strict: false,
-        expr: false
+        expr: true
       },
       globals: {
         exports: true

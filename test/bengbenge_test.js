@@ -1,46 +1,31 @@
 
 "use strict";
 
-var BengBenge = require('../lib/bengbenge.js');
-
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
-
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
+var bengbenge = require('../lib/bengbenge.js');
+var dns = 'newapp.herokuapp.com';
+var genURL = function(length, dns) {
+  'site' + length + '.' + dns;
+};
 
 exports['bengbenge'] = {
   setUp: function(done) {
-    this.bengbenge = new BengBenge();
+    this.bengbenge = bengbenge(dns);
+    this.bengbenge.clear();
     done();
   },
 
-  'appe': function(test) {
+  'all': function(test) {
     var items = [
-      { name: 'site1', url: 'http://site1.herokuapp.com' },
-      { name: 'site2', url: 'http://site2.herokuapp.com' },
-      { name: 'site3', url: 'http://site3.herokuapp.com' },
-      { name: 'site4', url: 'http://site4.herokuapp.com' },
-      { name: 'site5', url: 'http://site5.herokuapp.com' },
-      { name: 'site6', url: 'http://site6.herokuapp.com' }
+      { name: 'site1', url: genURL(1, dns) },
+      { name: 'site2', url: genURL(2, dns) },
+      { name: 'site3', url: genURL(3, dns) },
+      { name: 'site4', url: genURL(4, dns) },
+      { name: 'site5', url: genURL(5, dns) },
+      { name: 'site6', url: genURL(6, dns) }
     ];
 
     // append by single object.
-    test.equal( this.bengbenge.append( items[0] ), 1 );
+    test.equal( this.bengbenge.append( items[0] ), 1);
     test.equal( this.bengbenge[0].name, items[0].name );
     test.equal( this.bengbenge[0].url, items[0].url );
 
@@ -52,31 +37,27 @@ exports['bengbenge'] = {
       length++;
       return {
         name: 'site' + length,
-        url: 'http://site' + length + '.herokuapp.com'
+        url: genURL(length, dns)
       };
     }), 11);
 
     // test length.
     test.equal( this.bengbenge.length, 11);
-    test.done();
-  },
 
-  'clear': function(test) {
-    this.bengbenge.clear();
-    test.equal( this.bengbenge.length, 0 );
-
-    test.done();
-  },
-
-  'beng': function(test) {
+    // test beng
     var item;
     for ( var i = 0, max = this.bengbenge.length; i < max; ++i ) {
       var index = i + 1;
       item = this.bengbenge.beng();
       test.equal( item.name, 'site' + index );
-      test.equal( item.url, 'http://site' + index + '.herokuapp.com' );
+      test.equal( item.url, genURL(index, dns) );
     }
 
+    // clear
+    this.bengbenge.clear();
+    test.equal( this.bengbenge.length, 0 );
+
     test.done();
+
   }
 };
