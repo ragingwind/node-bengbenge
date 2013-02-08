@@ -15,7 +15,7 @@ Install the module with: `npm install bengbenge`
         url: length + '.newapp.herokuapp.com'
       };
     });
-    response(dns.beng().url);
+    redirect(dns.beng().url);
 
 For more information, Please refer to test/bengbenge_test.js
 
