@@ -1,0 +1,37 @@
+{
+  "name": "bengbenge",
+  "description": "bengbneg-e",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ragingwind/bengbenge",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ragingwind/bengbenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ragingwind/bengbenge/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ragingwind/bengbenge/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/bengbenge",
+  "engines": {
+    "node": "0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "lodash": "1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": []
+}
