@@ -58,6 +58,5 @@ exports['bengbenge'] = {
     test.equal( this.bengbenge.length, 0 );
 
     test.done();
-
   }
 };

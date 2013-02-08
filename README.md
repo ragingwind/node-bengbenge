@@ -1,21 +1,23 @@
-# bengbenge
-infinite loop array for round-robin dns, beng, beng. for funny.
+# bengbenge (뺑뺑이 by korean)
+Loop array for round-robin dns, beng, beng. for funny.
 
 ## Getting Started
 Install the module with: `npm install bengbenge`
 
 ## Examples
 
-var
-bengbenge.append( 5, function(index, length) {
+    var bengbenge = require('../lib/bengbenge.js');
+    var dns = bengbenge('newapp.herokuapp.com');
+    dns.append( 5, function(index, length) {
       length++;
       return {
         name: 'site' + length,
-        url: 'http://site' + length + '.herokuapp.com'
+        url: length + '.newapp.herokuapp.com'
       };
-    }), 11);
+    });
+    response(dns.beng().url);
 
-More information Please refer to test/bengbenge_test.js
+For more information, Please refer to test/bengbenge_test.js
 
 ## License
 Copyright (c) 2013 MOONANDYOU
