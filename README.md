@@ -21,7 +21,7 @@ For more information, Please refer to test/bengbenge_test.js
 
 ## TEST
 
-    grunt test
+    grunt
 
 ## License
 Copyright (c) 2013 MOONANDYOU
