@@ -27,9 +27,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
-    "lodash": "1.0.0-rc.3"
-  },
   "devDependencies": {
     "grunt": "~0.3.17"
   },
