@@ -1,7 +1,9 @@
 # bengbenge (뺑뺑이 by korean)
+
 Simple loop array for round-robin dns, beng, beng. for funny.
 
 ## Getting Started
+
 Install the module with: `npm install bengbenge`
 
 ## Examples
@@ -24,5 +26,5 @@ For more information, Please refer to test/bengbenge_test.js
     grunt
 
 ## License
-Copyright (c) 2013 MOONANDYOU
+Copyright (c) 2013 @ragingwind
 Licensed under the MIT license.

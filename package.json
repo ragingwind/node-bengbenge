@@ -2,22 +2,21 @@
   "name": "bengbenge",
   "description": "bengbnege, array for round-robin dns, beng, beng. for funny",
   "version": "0.1.4",
-  "homepage": "https://github.com/MOONANDYOU/bengbenge",
+  "homepage": "https://github.com/ragingwind/bengbenge",
   "author": {
     "name": "ragingwind",
     "email": "ragingwind@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:MOONANDYOU/bengbenge.git"
+    "url": "git@github.com:ragingwind/bengbenge.git"
   },
   "bugs": {
-    "url": "https://github.com/MOONANDYOU/bengbenge/issues"
+    "url": "https://github.com/ragingwind/bengbenge/issues"
   },
   "licenses": [
     {
-      "type": "MIT",
-      "url": "https://github.com/MOONANDYOU/bengbenge/blob/master/LICENSE-MIT"
+      "type": "MIT"
     }
   ],
   "main": "lib/bengbenge",
