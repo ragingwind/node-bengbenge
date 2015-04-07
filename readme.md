@@ -1,4 +1,4 @@
-# bengbenge (뺑뺑이 by korean)
+# bengbenge (뺑뺑이 in korean)
 
 Simple loop array for round-robin dns, beng, beng. for funny.
 
