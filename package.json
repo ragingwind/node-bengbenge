@@ -24,10 +24,10 @@
     "node": ">= 0.2.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha test"
   },
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "mocha": "*"
   },
   "keywords": []
 }
