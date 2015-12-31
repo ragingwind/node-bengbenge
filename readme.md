@@ -1,4 +1,4 @@
-# bengbenge (뺑뺑이 in Korean) [![Build Status](https://travis-ci.org/ragingwind/afile.svg?branch=master)](https://travis-ci.org/ragingwind/afile)
+# bengbenge (뺑뺑이 in Korean) [![Build Status](https://travis-ci.org/ragingwind/bengbenge.svg?branch=master)](https://travis-ci.org/ragingwind/bengbenge)
 
 > Simple loop array for round-robin dns, beng, beng. for funny.
 

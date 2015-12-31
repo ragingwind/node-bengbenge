@@ -14,20 +14,16 @@
   "bugs": {
     "url": "https://github.com/ragingwind/bengbenge/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
   "main": "index.js",
   "engines": {
     "node": ">= 4.0.0"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "xo && ava"
   },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "^0.9.1",
+    "xo": "^0.12.1"
   },
   "keywords": [
     "bengbenge",
