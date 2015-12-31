@@ -1,7 +1,7 @@
 
 "use strict";
 
-var bengbenge = require('../lib/bengbenge.js');
+var bengbenge = require('./');
 var assert = require('assert');
 var dns = 'newapp.herokuapp.com';
 var genURL = function(length, dns) {

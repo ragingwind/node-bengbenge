@@ -19,9 +19,9 @@
       "type": "MIT"
     }
   ],
-  "main": "lib/bengbenge",
+  "main": "index.js",
   "engines": {
-    "node": ">= 0.2.0"
+    "node": ">= 4.0.0"
   },
   "scripts": {
     "test": "mocha test"
@@ -29,5 +29,12 @@
   "devDependencies": {
     "mocha": "*"
   },
-  "keywords": []
+  "keywords": [
+    "bengbenge",
+    "route",
+    "loop",
+    "repeat",
+    "round-robin",
+    "array"
+  ]
 }
