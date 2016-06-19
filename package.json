@@ -32,5 +32,8 @@
     "repeat",
     "round-robin",
     "array"
-  ]
+  ],
+  "dependencies": {
+    "array-spiral": "^1.0.1"
+  }
 }

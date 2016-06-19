@@ -1,9 +1,11 @@
 'use strict';
 
-class LoopArray extends Array {
+const ArraySpiral = require('array-spiral');
+
+class BengBenge extends ArraySpiral {
 	constructor() {
 		super();
-		this.cursor = -1;
+		this.beng_ = this.iterator;
 	}
 
 	append() {
@@ -25,7 +27,7 @@ class LoopArray extends Array {
 				return args[0];
 			};
 		} else {
-			throw new Error('LoopArray got unknown arguments type');
+			throw new Error('BengBenge got unknown arguments type');
 		}
 
 		for (var i = 0; i < max; ++i) {
@@ -37,24 +39,21 @@ class LoopArray extends Array {
 
 	clear() {
 		this.splice(0, this.length);
-		this.cursor = -1;
 	}
 
 	remove() {
 		this.remove.apply(this, arguments);
-		this.cursor = -1;
 		return this.length;
 	}
 
 	beng() {
-		this.cursor = (this.cursor + 1) % this.length;
-		return this[this.cursor];
+		return this.beng_.next();
 	}
 }
 
 function bengbenge(dns) {
 	if (!bengbenge.dns[dns]) {
-		bengbenge.dns[dns] = new LoopArray();
+		bengbenge.dns[dns] = new BengBenge();
 	}
 
 	return bengbenge.dns[dns];
