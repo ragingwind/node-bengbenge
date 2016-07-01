@@ -28,7 +28,6 @@ class LoopArray extends Array {
 			throw new Error('LoopArray got unknown arguments type');
 		}
 
-		console.log('obj', this);
 		for (var i = 0; i < max; ++i) {
 			this.push(iterator(i, this.length));
 		}
