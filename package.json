@@ -1,6 +1,6 @@
 {
   "name": "bengbenge",
-  "description": "bengbnege, array for round-robin dns, beng, beng. for funny",
+  "description": "bengbnege, array for round-robin dns, beng, beng.",
   "version": "0.1.7",
   "homepage": "https://github.com/ragingwind/bengbenge",
   "author": {
@@ -16,14 +16,14 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "scripts": {
     "test": "xo && ava"
   },
   "devDependencies": {
-    "ava": "^0.11.0",
-    "xo": "^0.12.1"
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
   },
   "keywords": [
     "bengbenge",
