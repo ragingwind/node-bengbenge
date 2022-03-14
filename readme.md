@@ -14,6 +14,7 @@ $ npm install --save bengbenge
 var bengbenge = require('bengbenge');
 var dns = bengbenge('newapp.herokuapp.com');
 
+['app1', 'app2', 'app3', 'app4', 'app5']
 dns.append(5, function (index, length) {
 	length++;
 	return {
